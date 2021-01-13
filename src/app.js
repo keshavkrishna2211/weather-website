@@ -19,21 +19,21 @@ app.use(express.static(PublicDirectoryPath))
 app.get('',(req, res)=>{
   res.render('index',{
     title : 'Weather',
-    name : 'Keshav'
+    name : 'Keshav Krishna'
   })
 })
 app.get('/about',(req,res)=>
 {
   res.render('about', {
     title : 'About Me',
-    name :'Keshav'
+    name :'Keshav Krishna'
   })
 })
 app.get('/help',(req, res)=>{
   res.render('help',{
     helpText : ' feel free to ask',
     title :'Help',
-    name :'Keshav'
+    name :'Keshav Krishna'
   })
 })
 
@@ -79,14 +79,14 @@ app.get('/products',(req,res)=>
 app.get('/help/*',(req,res)=>{
   res.render('error',{
     title : '404',
-    name : 'Keshav',
+    name : 'Keshav Krishna',
     errorMessage : ' Article is not found'
   })
 })
 app.get('*',(req,res)=>{
   res.render('error',{
     errorMessage : 'Page not found',
-    name : 'Keshav',
+    name : 'Keshav Krishna',
     title:'404'
   })
 })
