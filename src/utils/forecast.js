@@ -13,7 +13,7 @@ const forecast=(latitude , longitude , callback)=>
     }
     else{
       callback(undefined ,{
-        data : body.current.weather_descriptions[0] + ' . It is currently '+ body.current.temperature + ' degrees  farenheit out . It feels like '+ body.current.feelslike +' farenheit degree.'+' Humidity is '+ body.current.humidity+ '.'
+        data : body.current.weather_descriptions[0] + ' . It is currently '+ body.current.temperature + ' degrees  farenheit out . It feels like '+ body.current.feelslike +' farenheit degree.'+' Humidity is '+ body.current.humidity+ '% .'
       })
     }
   })
